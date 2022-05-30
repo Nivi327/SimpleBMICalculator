@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weight App Converter</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+     crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <h1 class="text-light fs-1">Weight Converter</h1>
+
+        <form class="form-group ">
+            <input class="form-control form-control-lg mt-3" style="width:40%;" type="number" name="weight" id="kgs" placeholder="Enter Your Weight in kgs..">
+
+            <input class="form-control form-control-lg mt-3" style="width:40%;" type="number" name="height" id="mts" placeholder="Enter Your Height in cms..">
+
+            <button type="submit" class="btn btn-primary text-light fs-4 mt-2" id="calculate">Calculate</button>
+        </form>
+
+        <div class="bg-success mt-3 p-3" style="width:40%;">
+            <span class="text-light fs-2">Your BMI: <br> <span class="bmi_result text-light"></span></span>
+        </div>
+
+        <div class="bg-primary mt-3 p-3" style="width:40%;">
+            <span class="text-light fs-2">POUNDS: <br> <span class="pound_result text-light"></span></span>
+        </div>
+
+        <div class="bg-info mt-3 p-3" style="width:40%;">
+            <span class="text-light fs-2">OUNCE: <br> <span class="ounce_result text-light"></span></span>
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
